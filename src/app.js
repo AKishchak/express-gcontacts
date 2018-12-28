@@ -1,13 +1,12 @@
 import Models from './models';
 import './services';
+import Routes from './routes';
 
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-const routes = require('./routes');
-
 
 var app = express();
 Models.initialize();
@@ -21,7 +20,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-routes.initialize(app);
+Routes.initialize(app);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

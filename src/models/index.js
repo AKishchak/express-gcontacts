@@ -3,7 +3,7 @@ import User from './user.model'
 
 export default {
     initialize(){
-        mongoose.connect('mongodb://root:root@localhost:27017/crud?authSource=admin', {
+        mongoose.connect(process.env.DB_CONNECTION_STRING, {
             useNewUrlParser: true
         });
 
