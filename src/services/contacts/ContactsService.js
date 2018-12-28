@@ -147,7 +147,6 @@ export default class ContactsService {
             let token = this.client.credentials.access_token;
             this.getContact(id)
                 .then(contact => {
-                    console.log('============', contact.entry['$']['gd:etag']);
                     request({
                         method: 'DELETE',
                         url: `https://www.google.com/m8/feeds/contacts/${this.user.email}/full/${id}?access_token=${token}`,
