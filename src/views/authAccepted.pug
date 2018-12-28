@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    div
+        h4 OAUth Accept Page
+    pre #{code}
+    if errors
+        div.errors #{errors}
+    a(href='/').button.mt-10 Got It!

@@ -1,0 +1,26 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.button{
+    display: inline-block;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    background: darkslategray;
+    color: #fff;
+}
+
+.errors{
+    background: #ff000030;
+    padding: 20px;
+    border-left: 3px solid #ff7272;
+}
+
+.mt-10{
+    margin-top: 10px;
+}
