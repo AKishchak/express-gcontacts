@@ -10,7 +10,7 @@ Home page with GoogleOauth prompt
 GET / 
 ```
 
-####REST API
+#### REST API
 
 Get all users in the system
 ```$xslt
